@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using DevExpress.Xpf.Grid;
 
-namespace DXGrid_DisplayCustomText {
+namespace DisplayCustomText_CodeBehind {
     public class Invoice {
         public int ID { get; set; }
         public string ProductName { get; set; }
@@ -12,15 +12,16 @@ namespace DXGrid_DisplayCustomText {
         public double Discount { get; set; }
         public bool IsShipped { get; set; }
     }
-    public partial class Window1 : Window {
-        public Window1() {
+    public partial class MainWindow : Window {
+        public MainWindow() {
             InitializeComponent();
             gridControl1.ItemsSource = new List<Invoice>(GetData());
         }
         private void gridControl1_CustomColumnDisplayText(object sender,
                 CustomColumnDisplayTextEventArgs e) {
-            if (e.Column != columnProductName) return;
-            if ((double)gridControl1.GetCellValue(e.RowHandle, "Discount") > 20)
+            if(e.Column != columnProductName)
+                return;
+            if((double)gridControl1.GetCellValue(e.RowHandle, "Discount") > 20)
                 e.DisplayText = ((string)e.Value) + " (SALE)";
         }
 

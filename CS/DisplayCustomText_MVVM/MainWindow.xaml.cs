@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DXGrid_DisplayCustomText_MVVM {
+namespace DisplayCustomText_MVVM {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
