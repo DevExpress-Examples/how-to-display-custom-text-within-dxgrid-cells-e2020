@@ -4,9 +4,6 @@ using DevExpress.Mvvm.Xpf;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DXGrid_DisplayCustomText_MVVM {
     public class Invoice {
@@ -34,10 +31,10 @@ namespace DXGrid_DisplayCustomText_MVVM {
 
         [Command]
         public void CustomColumnDisplayText(ColumnDisplayTextArgs args) {
-            if (args.FieldName != nameof(Invoice.ProductName)) {
+            if(args.FieldName != nameof(Invoice.ProductName)) {
                 return;
             }
-            if (InvoiceList[args.SourceIndex].Discount > 20) {
+            if(InvoiceList[args.SourceIndex].Discount > 20) {
                 args.DisplayText += " (SALE)";
             }
         }

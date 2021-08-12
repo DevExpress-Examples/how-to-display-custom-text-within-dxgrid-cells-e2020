@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace DXGrid_DisplayCustomText_MVVM.Properties {
+namespace DisplayCustomText_CodeBehind.Properties {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -37,7 +37,7 @@ namespace DXGrid_DisplayCustomText_MVVM.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DXGrid_DisplayCustomText_MVVM.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DisplayCustomText_CodeBehind.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

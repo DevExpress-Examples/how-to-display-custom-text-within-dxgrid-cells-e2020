@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace DXGrid_DisplayCustomText_MVVM {
+namespace DisplayCustomText_MVVM {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
