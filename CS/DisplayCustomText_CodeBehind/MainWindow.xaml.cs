@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using DevExpress.Xpf.Grid;
+using DevExpress.Xpf.Grid; 
 
 namespace DisplayCustomText_CodeBehind {
     public class Invoice {
