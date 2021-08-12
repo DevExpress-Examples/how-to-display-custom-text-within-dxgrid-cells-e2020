@@ -19,7 +19,7 @@ namespace DisplayCustomText_CodeBehind {
         }
         private void gridControl1_CustomColumnDisplayText(object sender,
                 CustomColumnDisplayTextEventArgs e) {
-            if(e.Column != columnProductName)
+            if(!e.Column.Equals(columnProductName))
                 return;
             if((double)gridControl1.GetCellValue(e.RowHandle, "Discount") > 20)
                 e.DisplayText = ((string)e.Value) + " (SALE)";
