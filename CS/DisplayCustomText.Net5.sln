@@ -1,11 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayCustomText_CodeBehind", "DisplayCustomText_CodeBehind\DisplayCustomText_CodeBehind.csproj", "{A8BF3950-CDAC-43C1-82F0-955D63BB7A23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayCustomText_CodeBehind", "DisplayCustomText_CodeBehind\DisplayCustomText_CodeBehind.Net5.csproj", "{A8BF3950-CDAC-43C1-82F0-955D63BB7A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayCustomText_MVVM", "DisplayCustomText_MVVM\DisplayCustomText_MVVM.csproj", "{D1323D6C-09A3-40CB-BCCE-6842E60758DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayCustomText_MVVM", "DisplayCustomText_MVVM\DisplayCustomText_MVVM.Net5.csproj", "{D1323D6C-09A3-40CB-BCCE-6842E60758DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
