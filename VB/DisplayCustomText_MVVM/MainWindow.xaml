@@ -11,6 +11,8 @@
         <local:MainViewModel/>
     </Window.DataContext>
     <Grid>
-        <dxg:GridControl ItemsSource="{Binding InvoiceList}" CustomColumnDisplayTextCommand="{Binding CustomColumnDisplayTextCommand}" AutoGenerateColumns="AddNew"/>
+        <dxg:GridControl ItemsSource="{Binding InvoiceList}" 
+                         AutoGenerateColumns="AddNew" 
+                         CustomColumnDisplayTextCommand="{Binding CustomColumnDisplayTextCommand}"/>
     </Grid>
 </Window>
