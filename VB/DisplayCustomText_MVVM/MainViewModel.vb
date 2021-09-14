@@ -28,7 +28,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 				.ProductName = "Tofu",
 				.Price = 235.54,
 				.Discount = 9.4,
-				.ShippingDate = New DateTime(2010, 3, 12),
+				.ShippingDate = New DateTime(2020, 3, 12),
 				.IsShipped = False
 			}
 			Yield New Invoice() With {
@@ -36,7 +36,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 				.ProductName = "Ravioli Angelo",
 				.Price = 178.45,
 				.Discount = 6.1,
-				.ShippingDate = New DateTime(2010, 2, 9),
+				.ShippingDate = New DateTime(2020, 2, 9),
 				.IsShipped = True
 			}
 			Yield New Invoice() With {
@@ -44,7 +44,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 				.ProductName = "Geitost",
 				.Price = 89.98,
 				.Discount = 5.4,
-				.ShippingDate = New DateTime(2010, 4, 1),
+				.ShippingDate = New DateTime(2020, 4, 1),
 				.IsShipped = False
 			}
 			Yield New Invoice() With {
@@ -52,7 +52,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 				.ProductName = "Chang",
 				.Price = 189.33,
 				.Discount = 18.2,
-				.ShippingDate = New DateTime(2010, 5, 23),
+				.ShippingDate = New DateTime(2020, 5, 23),
 				.IsShipped = True
 			}
 			Yield New Invoice() With {
@@ -60,7 +60,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 				.ProductName = "Inlagd Sill",
 				.Price = 509.10,
 				.Discount = 22.2,
-				.ShippingDate = New DateTime(2010, 6, 30),
+				.ShippingDate = New DateTime(2020, 6, 30),
 				.IsShipped = False
 			}
 			Yield New Invoice() With {
@@ -68,7 +68,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 				.ProductName = "Alice Mutton",
 				.Price = 791.18,
 				.Discount = 24.4,
-				.ShippingDate = New DateTime(2010, 5, 7),
+				.ShippingDate = New DateTime(2020, 5, 7),
 				.IsShipped = True
 			}
 		End Function
