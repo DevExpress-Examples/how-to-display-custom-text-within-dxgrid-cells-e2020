@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using DevExpress.Xpf.Grid; 
+using DevExpress.Xpf.Grid;
 
 namespace DisplayCustomText_CodeBehind {
     public class Invoice {
@@ -17,8 +17,7 @@ namespace DisplayCustomText_CodeBehind {
             InitializeComponent();
             gridControl1.ItemsSource = new List<Invoice>(GetData());
         }
-        private void gridControl1_CustomColumnDisplayText(object sender,
-                CustomColumnDisplayTextEventArgs e) {
+        private void gridControl1_CustomColumnDisplayText(object sender, CustomColumnDisplayTextEventArgs e) {
             if(!e.Column.Equals(columnProductName))
                 return;
             if((double)gridControl1.GetCellValue(e.RowHandle, "Discount") > 20)
