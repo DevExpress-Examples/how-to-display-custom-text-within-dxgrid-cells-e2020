@@ -15,7 +15,7 @@ This example shows how to display custom text in data cells. In this example, th
 ### Code Behind Technique
 
 - [MainWindow.xaml](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml) ([MainWindow.xaml](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml))
-- [MainWindow.xaml.cs](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml.cs#L20-L26) ([MainWindow.xaml.vb](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml.vb#L22-L29))
+- [MainWindow.xaml.cs](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml.cs#L20-L25) ([MainWindow.xaml.vb](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml.vb#L22-L29))
 
 ### MVVM Technique
 
