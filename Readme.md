@@ -6,7 +6,7 @@
 
 # WPF Data Grid - How to display custom text within data cells
 
-This example shows how to display custom text in data cells. In this example, if a value in the **Discount** column is greater than 20, the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) adds the `(SALE)` string to the name of the product in the **Product Name** column.
+This example shows how to display custom text in data cells. In this example, the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) adds the `(SALE)` string to the **Product Name** if a value in the **Discount** column is greater than 20.
 
 <!-- default file list -->
 
