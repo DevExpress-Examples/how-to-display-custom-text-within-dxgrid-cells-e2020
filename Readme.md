@@ -8,6 +8,8 @@
 
 This example shows how to display custom text in data cells. In this example, the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) adds the `(SALE)` string to the **Product Name** if a value in the **Discount** column is greater than 20.
 
+![](https://docs.devexpress.com/WPF/images/GridControl_CustomColumnDisplayText.png?v=21.2)
+
 <!-- default file list -->
 
 ## Files to Look At
