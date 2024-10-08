@@ -42,7 +42,7 @@ Namespace DXGrid_DisplayCustomText_MVVM
 
         <Command>
         Public Sub CustomColumnDisplayText(ByVal args As ColumnDisplayTextArgs)
-            If Not Equals(args.FieldName, NameOf(Invoice.ProductName)) Then
+            If Not Equals(args.FieldName, NameOf(Invoice.ProductName)) OrElse args.SourceIndex < 0 Then
                 Return
             End If
 
