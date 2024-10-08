@@ -18,7 +18,7 @@ namespace DisplayCustomText_CodeBehind {
             gridControl1.ItemsSource = new List<Invoice>(GetData());
         }
         void gridControl1_CustomColumnDisplayText(object sender, CustomColumnDisplayTextEventArgs e) {
-            if(!e.Column.Equals(columnProductName))
+            if(!e.Column.Equals(columnProductName) || e.ListSourceIndex < 0)
                 return;
             if((double)gridControl1.GetCellValue(e.RowHandle, "Discount") > 20)
                 e.DisplayText = ((string)e.Value) + " (SALE)";
