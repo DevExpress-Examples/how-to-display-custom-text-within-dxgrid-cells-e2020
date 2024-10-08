@@ -31,7 +31,7 @@ namespace DXGrid_DisplayCustomText_MVVM {
 
         [Command]
         public void CustomColumnDisplayText(ColumnDisplayTextArgs args) {
-            if(args.FieldName != nameof(Invoice.ProductName)) {
+            if(args.FieldName != nameof(Invoice.ProductName) || args.SourceIndex < 0) {
                 return;
             }
             if(InvoiceList[args.SourceIndex].Discount > 20) {
