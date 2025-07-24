@@ -29,7 +29,7 @@ Namespace DisplayCustomText_CodeBehind
         End Sub
 
         Private Sub gridControl1_CustomColumnDisplayText(ByVal sender As Object, ByVal e As CustomColumnDisplayTextEventArgs)
-            If Not e.Column.Equals(Me.columnProductName) Then Return
+            If Not e.Column.Equals(Me.columnProductName) OrElse e.ListSourceIndex < 0 Then Return
             If CDbl(Me.gridControl1.GetCellValue(e.RowHandle, "Discount")) > 20 Then e.DisplayText =(CStr(e.Value)) & " (SALE)"
         End Sub
 
