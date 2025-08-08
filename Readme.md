@@ -5,40 +5,76 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 
-# WPF Data Grid - Display custom text in cells based on a specific condition
+# WPF Data Grid – Display Custom Text in Cells Based on a Condition
 
-This example shows how to display custom text in data cells. In this example, the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) adds the `(SALE)` string to the **Product Name** if a value in the **Discount** column is greater than 20.
+In this example, the [`GridControl`](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) changes cell display text when a specific condition is met. 
 
-![](https://docs.devexpress.com/WPF/images/GridControl_CustomColumnDisplayText.png?v=21.2)
+If the **Discount** value is greater than 20, the grid appends **(SALE)** to the **Product Name**.
 
-<!-- default file list -->
+![Custom Text in Cells Based on a Condition](./Images/custom-text-in-cells.jpg)
 
-## Files to Look At
+Use this technique when you need to:
 
-### Code Behind Technique
+- Add labels or status markers to cell values.
+- Update cell text dynamically while the original data remains unchanged.
+- Improve readability and highlight key values.
 
-- [MainWindow.xaml](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml) ([MainWindow.xaml](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml))
-- [MainWindow.xaml.cs](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml.cs#L20-L25) ([MainWindow.xaml.vb](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml.vb#L22-L29))
+## Implementation Details
 
-### MVVM Technique
+The example includes [Code-Behind](#code-behind) and [MVVM](#mvvm) techniques.  
 
-- [MainWindow.xaml](./CS/DisplayCustomText_MVVM/MainWindow.xaml) ([MainWindow.xaml](./VB/DisplayCustomText_MVVM/MainWindow.xaml))
-- [MainViewModel.cs](./CS/DisplayCustomText_MVVM/MainViewModel.cs#L32-L40) ([MainViewModel.vb](./VB/DisplayCustomText_MVVM/MainViewModel.vb#L76-L84))
+### Code-Behind
 
-<!-- default file list end -->
+Handle the [`CustomColumnDisplayText`](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayText) event to replace or extend the text displayed in a cell based on custom conditions.
+
+```csharp
+void grid_CustomColumnDisplayText(object sender, CustomColumnDisplayTextEventArgs e) {
+    if (e.Column.FieldName == "ProductName") {
+        decimal discount = (decimal)e.GetCellValue("Discount");
+        if (discount > 20)
+            e.DisplayText += " (SALE)";
+    }
+}
+```
+
+### MVVM
+
+Bind the [CustomColumnDisplayTextCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayTextCommand) to a view model command to change the text displayed in a cell based on custom conditions.
+
+```csharp
+public void OnCustomColumnDisplayText(CustomColumnDisplayTextEventArgs e) {
+    if (e.Column.FieldName == "ProductName") {
+        decimal discount = (decimal)e.GetCellValue("Discount");
+        if (discount > 20)
+            e.DisplayText += " (SALE)";
+    }
+}
+```
+
+## Files to Review
+
+### Code-Behind
+
+* [MainWindow.xaml](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml) ([VB](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml.cs#L20-L25) ([VB](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml.vb#L22-L29))
+
+### MVVM
+
+* [MainWindow.xaml](./CS/DisplayCustomText_MVVM/MainWindow.xaml) ([VB](./VB/DisplayCustomText_MVVM/MainWindow.xaml))
+* [MainViewModel.cs](./CS/DisplayCustomText_MVVM/MainViewModel.cs#L32-L40) ([VB](./VB/DisplayCustomText_MVVM/MainViewModel.vb#L76-L84))
 
 ## Documentation
 
-- [Format Cell Values](https://docs.devexpress.com/WPF/400449/controls-and-libraries/data-grid/appearance-customization/format-cell-values)
-- [GridControl.CustomColumnDisplayText](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayText)
-- [TreeListView.CustomColumnDisplayText](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView.CustomColumnDisplayText)
-- [GridControl.CustomColumnDisplayTextCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayTextCommand)
-- [TreeListView.CustomColumnDisplayTextCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.TreeListView.CustomColumnDisplayTextCommand)
+* [`GridControl`](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)
+* [Format Cell Values](https://docs.devexpress.com/WPF/400449/controls-and-libraries/data-grid/appearance-customization/format-cell-values)
+* [GridControl.CustomColumnDisplayText](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayText)
+* [GridControl.CustomColumnDisplayTextCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayTextCommand)
 
 ## More Examples
 
-- [How to Display custom text within data cells and groups](https://github.com/DevExpress-Examples/how-to-display-custom-text-within-data-cells-and-groups-t327301)
-- [How to Apply Custom Rules to Group Rows](https://github.com/DevExpress-Examples/how-to-implement-custom-grouping-e1530)
+* [Display Custom Text Within Data Cells and Groups](https://github.com/DevExpress-Examples/how-to-display-custom-text-within-data-cells-and-groups-t327301)
+* [Apply Custom Rules to Group Rows](https://github.com/DevExpress-Examples/how-to-implement-custom-grouping-e1530)
+
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
