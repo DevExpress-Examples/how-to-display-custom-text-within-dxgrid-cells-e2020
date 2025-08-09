@@ -21,7 +21,7 @@ Use this technique when you need to:
 
 ## Implementation Details
 
-The example includes [Code-Behind](#code-behind) and [MVVM](#mvvm) techniques.  
+The example includes [code-behind](#code-behind) and [MVVM](#mvvm) techniques.
 
 ### Code-Behind
 
