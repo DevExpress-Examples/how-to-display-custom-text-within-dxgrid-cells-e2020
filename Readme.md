@@ -55,17 +55,17 @@ public void OnCustomColumnDisplayText(CustomColumnDisplayTextEventArgs e) {
 
 ### Code-Behind
 
-* [MainWindow.xaml](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml) ([VB](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml.cs#L20-L25) ([VB](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml.vb#L22-L29))
+* [MainWindow.xaml](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/DisplayCustomText_CodeBehind/MainWindow.xaml.cs#L20-L25) (VB: [MainWindow.xaml.vb](./VB/DisplayCustomText_CodeBehind/MainWindow.xaml.vb#L22-L29))
 
 ### MVVM
 
-* [MainWindow.xaml](./CS/DisplayCustomText_MVVM/MainWindow.xaml) ([VB](./VB/DisplayCustomText_MVVM/MainWindow.xaml))
-* [MainViewModel.cs](./CS/DisplayCustomText_MVVM/MainViewModel.cs#L32-L40) ([VB](./VB/DisplayCustomText_MVVM/MainViewModel.vb#L76-L84))
+* [MainWindow.xaml](./CS/DisplayCustomText_MVVM/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DisplayCustomText_MVVM/MainWindow.xaml))
+* [MainViewModel.cs](./CS/DisplayCustomText_MVVM/MainViewModel.cs#L32-L40) (VB: [MainViewModel.vb](./VB/DisplayCustomText_MVVM/MainViewModel.vb#L76-L84))
 
 ## Documentation
 
-* [`GridControl`](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)
+* [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)
 * [Format Cell Values](https://docs.devexpress.com/WPF/400449/controls-and-libraries/data-grid/appearance-customization/format-cell-values)
 * [GridControl.CustomColumnDisplayText](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayText)
 * [GridControl.CustomColumnDisplayTextCommand](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.CustomColumnDisplayTextCommand)
