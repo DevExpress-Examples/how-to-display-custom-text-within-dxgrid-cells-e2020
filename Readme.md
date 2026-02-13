@@ -40,7 +40,7 @@ This example shows how to display custom text in data cells. In this example, th
 - [How to Display custom text within data cells and groups](https://github.com/DevExpress-Examples/how-to-display-custom-text-within-data-cells-and-groups-t327301)
 - [How to Apply Custom Rules to Group Rows](https://github.com/DevExpress-Examples/how-to-implement-custom-grouping-e1530)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-display-custom-text-within-dxgrid-cells-e2020&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-display-custom-text-within-dxgrid-cells-e2020&~~~was_helpful=no)
 
